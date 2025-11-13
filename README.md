@@ -72,8 +72,3 @@ Luis Oliveira (exemplos para a live)
 ## Licença
 
 Veja o arquivo `LICENSE` ou adicione a licença desejada ao repositório.
-# Arquitetura Orientada a Eventos (EDA) com TypeScript
-
-Exemplos utilizados/planejados para a live **Arquitetura Orientada a Eventos – Desvendando o Poder da Reatividade no Desenvolvimento Fullstack**.
-
-Baseado nos tópicos dos slides:- Conceitos de evento, produtor, consumidor, desacoplamento e plataforma de processamento- Modelos Pub/Sub e fluxo de eventos- Vantagens e desvantagens da EDA- Padrões em EDA: Pub/Sub, Event Sourcing, CQRS, Sagas- Aplicações práticas em sistemas distribuídos e fullstack## Requisitos- Node.js 18+- npm, yarn ou pnpm## Como rodar`bash# instalar dependênciasnpm install# rodar todos os exemplosnpm run dev# rodar testesnpm test# compilar para JavaScriptnpm run build# executar a versão compiladanpm start`## Arquivos principais- `src/concepts.ts` — define tipos básicos (Evento, Produtor, Consumidor, EventBus)- `src/pubsub-basic.ts` — exemplo de Pub/Sub em memória- `src/event-sourcing.ts` — pequeno Event Store em memória + reconstrução de estado- `src/cqrs-simplified.ts` — separação de comandos e queries usando eventos- `src/saga.ts` — exemplo de Saga para processo de pedido com compensações- `src/integration-example.ts` — simula microserviços (checkout, estoque, notificação) reagindo a eventos- `src/index.ts` — ponto de entrada que executa os demos na ordem didáticaOs testes em `tests/arquitetura-eventos.test.ts` validam o funcionamento básico do Event Store e da reconstrução de estado.
